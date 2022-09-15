@@ -1,10 +1,32 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {
+  ExtraOptions,
+  PreloadAllModules,
+  RouterModule,
+  Routes,
+} from '@angular/router';
 
-const routes: Routes = [];
+import { RoutePath } from '@shared/constants/routes.constants';
+
+export const routes: Routes = [
+  {
+    path: RoutePath.Pages,
+    loadChildren: () =>
+      import('./pages/pages.module').then((m) => m.PagesModule),
+    canActivate: [],
+  },
+  { path: '', redirectTo: './pages/pages.module', pathMatch: 'full' },
+];
+
+const config: ExtraOptions = {
+  useHash: false,
+  preloadingStrategy: PreloadAllModules,
+  onSameUrlNavigation: 'reload',
+};
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations: [],
+  imports: [RouterModule.forRoot(routes, config)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
