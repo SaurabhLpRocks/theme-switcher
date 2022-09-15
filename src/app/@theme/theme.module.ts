@@ -24,6 +24,7 @@ import {
   SpinnerComponent,
 } from './components';
 import { ThemeService } from './theme.service';
+import { SubscribeModule } from '@ngneat/subscribe';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatBadgeModule,
@@ -38,7 +39,7 @@ const ANGULAR_MATERIAL_MODULES = [
 
 const ANGULAR_MODULES = [CommonModule, RouterModule];
 
-const THIRD_PARTY_MODULES = [FontAwesomeModule];
+const THIRD_PARTY_MODULES = [FontAwesomeModule, SubscribeModule];
 
 const COMPONENTS = [
   DefaultLayoutComponent,

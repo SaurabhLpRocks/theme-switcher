@@ -9,19 +9,16 @@ export const pagesRoutes: Routes = [
   {
     component: PagesComponent,
     path: '',
-    canActivate: [],
     children: [
       {
         path: '',
-        redirectTo: '',
+        redirectTo: 'dashboard',
         pathMatch: 'full',
-        canActivate: [],
       },
       {
         loadChildren: () =>
           import('pages/dashboard').then((me) => me.DashboardModule),
         path: RoutePath.Dashboard,
-        canActivate: [],
       },
     ],
   },

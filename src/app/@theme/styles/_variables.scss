@@ -1,4 +1,4 @@
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 
 $primary: #5e0000;
 $accent: #00a5a5;
@@ -137,11 +137,3 @@ $dark-accent-palette: (
     A700: #000000,
   ),
 );
-
-@mixin card-position() {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-}

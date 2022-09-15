@@ -18,6 +18,7 @@ import { ThemeService } from '@theme/theme.service';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SubscribeModule } from '@ngneat/subscribe';
 
 const ANGULAR_MODULES = [
   CommonModule,
@@ -29,7 +30,7 @@ const ANGULAR_MODULES = [
 ];
 
 const CUSTOM_MODULES = [CoreModule, ThemeModule];
-const THIRD_PARTY_MODULES = [HotToastModule.forRoot()];
+const THIRD_PARTY_MODULES = [HotToastModule.forRoot(), SubscribeModule];
 
 @NgModule({
   declarations: [AppComponent],

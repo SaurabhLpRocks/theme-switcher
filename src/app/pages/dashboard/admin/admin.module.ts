@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AdminComponent } from './admin.component';
 import { AdminRoutingModule } from './admin-routing.module';
+import { SubscribeModule } from '@ngneat/subscribe';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatAutocompleteModule,
@@ -28,7 +29,7 @@ const ANGULAR_MATERIAL_MODULES = [
   MatTooltipModule,
 ];
 
-const ANGULAR_MODULES = [BrowserModule, FormsModule, ReactiveFormsModule];
+const ANGULAR_MODULES = [FormsModule, ReactiveFormsModule];
 
 @NgModule({
   declarations: [AdminComponent],
@@ -37,6 +38,7 @@ const ANGULAR_MODULES = [BrowserModule, FormsModule, ReactiveFormsModule];
     AdminRoutingModule,
     ...ANGULAR_MATERIAL_MODULES,
     ...ANGULAR_MODULES,
+    SubscribeModule,
   ],
   providers: [],
 })

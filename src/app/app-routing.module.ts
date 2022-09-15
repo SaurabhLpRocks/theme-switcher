@@ -13,9 +13,8 @@ export const routes: Routes = [
     path: RoutePath.Pages,
     loadChildren: () =>
       import('./pages/pages.module').then((m) => m.PagesModule),
-    canActivate: [],
   },
-  { path: '', redirectTo: './pages/pages.module', pathMatch: 'full' },
+  { path: '', redirectTo: './pages/dashboard/admin', pathMatch: 'full' },
 ];
 
 const config: ExtraOptions = {
