@@ -6,14 +6,14 @@
       >menu</mat-icon
     >
   </button>
-  <!-- <fa-icon [icon]="faHandHoldingUsd" class="finance-logo" size="2x" [spin]="true"></fa-icon> -->
+  <!-- <fa-icon [icon]="faHandHoldingUsd" class="app-logo" size="2x" [spin]="true"></fa-icon> -->
   <!-- <span>Inbox</span> -->
   <span class="spacer"></span>
   <mat-slide-toggle
     [color]="'warn'"
     [checked]="isLightTheme"
     (change)="toggleDarkTheme($event.checked)"
-    >{{ isLightTheme ? 'Light Theme' : 'Dark Theme' }}</mat-slide-toggle
+    >{{ isLightTheme ? "Light Theme" : "Dark Theme" }}</mat-slide-toggle
   >
   <span class="header-spacer"></span>
   <button mat-icon-button>
