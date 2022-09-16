@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { Observable } from 'rxjs';
 
-import { onMainContentChange } from '@theme/animations/animations';
-import { ThemeService } from '@theme/theme.service';
+import { onMainContentChange } from '../../../@theme/animations/animations';
+import { ThemeService } from '../../../@theme/theme.service';
 
 import { SideNavService } from '../side-nav/side-nav.service';
 

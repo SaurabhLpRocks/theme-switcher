@@ -5,9 +5,9 @@ import { faHandHoldingUsd } from '@fortawesome/free-solid-svg-icons';
 
 import { Observable } from 'rxjs';
 
-import { appConstants } from '@shared/constants/app.constant';
+import { appConstants } from '../../../@shared/constants/app.constant';
 
-import { ThemeService } from '@theme/theme.service';
+import { ThemeService } from '../../../@theme/theme.service';
 
 import { SideNavService } from '../side-nav/side-nav.service';
 

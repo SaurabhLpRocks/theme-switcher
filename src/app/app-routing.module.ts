@@ -6,7 +6,7 @@ import {
   Routes,
 } from '@angular/router';
 
-import { RoutePath } from '@shared/constants/routes.constants';
+import { RoutePath } from './@shared/constants/routes.constants';
 
 export const routes: Routes = [
   {
@@ -14,7 +14,7 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./pages/pages.module').then((m) => m.PagesModule),
   },
-  { path: '', redirectTo: './pages/dashboard/admin', pathMatch: 'full' },
+  { path: '', redirectTo: '/pages/dashboard/admin', pathMatch: 'full' },
 ];
 
 const config: ExtraOptions = {

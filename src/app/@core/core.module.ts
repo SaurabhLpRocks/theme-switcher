@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { ThemeModule } from '@theme/theme.module';
+import { ThemeModule } from '../@theme/theme.module';
 
 import { CoreService } from './core.service';
 import { EnsureModuleLoadedOnceGuard } from './ensure-module-loaded-once.guard';

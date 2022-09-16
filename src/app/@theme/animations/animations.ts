@@ -1,6 +1,12 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 
-import { appConstants } from '@shared/constants/app.constant';
+import { appConstants } from '../../@shared/constants/app.constant';
 
 const sideNav = appConstants.sideNav;
 const delay = appConstants.sideNav.animationDelay;
@@ -55,25 +61,40 @@ export const animateText = trigger('animateText', [
       opacity: 1,
     })
   ),
-  transition(sideNavCloseToOpenState, animate(`${sideNav.textOpenAnimationDelay}ms ease-out`)),
-  transition(sideNavCloseToOpenState, animate(`${sideNav.textCloseAnimationDelay}ms ease-out`)),
+  transition(
+    sideNavCloseToOpenState,
+    animate(`${sideNav.textOpenAnimationDelay}ms ease-out`)
+  ),
+  transition(
+    sideNavCloseToOpenState,
+    animate(`${sideNav.textCloseAnimationDelay}ms ease-out`)
+  ),
 ]);
 
-export const resizeAvatarOnSideNavCollapseExpand = trigger('resizeAvatarOnSideNavCollapseExpand', [
-  state(
-    'small',
-    style({
-      width: '30px',
-      height: '30px',
-    })
-  ),
-  state(
-    'big',
-    style({
-      width: '50px',
-      height: '50px',
-    })
-  ),
-  transition('big => small', animate(`${sideNav.textOpenAnimationDelay}ms ease-out`)),
-  transition('small => big', animate(`${sideNav.textCloseAnimationDelay}ms ease-out`)),
-]);
+export const resizeAvatarOnSideNavCollapseExpand = trigger(
+  'resizeAvatarOnSideNavCollapseExpand',
+  [
+    state(
+      'small',
+      style({
+        width: '30px',
+        height: '30px',
+      })
+    ),
+    state(
+      'big',
+      style({
+        width: '50px',
+        height: '50px',
+      })
+    ),
+    transition(
+      'big => small',
+      animate(`${sideNav.textOpenAnimationDelay}ms ease-out`)
+    ),
+    transition(
+      'small => big',
+      animate(`${sideNav.textCloseAnimationDelay}ms ease-out`)
+    ),
+  ]
+);

@@ -10,36 +10,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HotToastModule } from '@ngneat/hot-toast';
+import { SubscribeModule } from '@ngneat/subscribe';
 
-import { CoreModule } from '@core/core.module';
+import { CoreModule } from './@core/core.module';
 
-import { ThemeModule } from '@theme/theme.module';
-import { ThemeService } from '@theme/theme.service';
+import { ThemeModule } from './@theme/theme.module';
+import { ThemeService } from './@theme/theme.service';
+
+import { ANGULAR_MATERIAL_MODULES } from './@shared';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SubscribeModule } from '@ngneat/subscribe';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
-import { MatTableModule } from '@angular/material/table';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatBadgeModule } from '@angular/material/badge';
-import { MatListModule } from '@angular/material/list';
-import { MatSelectModule } from '@angular/material/select';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { ANGULAR_MATERIAL_MODULES } from './@shared';
 
 const ANGULAR_MODULES = [
   CommonModule,

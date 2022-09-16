@@ -9,14 +9,16 @@ import { MatSelectChange } from '@angular/material/select';
 import { BehaviorSubject, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { NavItem, sideNavMenus } from '@shared/constants/routes.constants';
-import { IUser } from '@shared/typings';
+import {
+  NavItem,
+  sideNavMenus,
+} from '../../../@shared/constants/routes.constants';
 
 import {
   animateText,
   onSideNavChange,
   resizeAvatarOnSideNavCollapseExpand,
-} from '@theme/animations/animations';
+} from '../../../@theme/animations/animations';
 
 import { SideNavService } from './side-nav.service';
 

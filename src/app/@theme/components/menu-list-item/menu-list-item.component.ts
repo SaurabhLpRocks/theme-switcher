@@ -8,7 +8,7 @@ import {
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { NavItem } from '@shared/constants/routes.constants';
+import { NavItem } from '../../../@shared/constants/routes.constants';
 
 import { showHideMenuText } from './menu-list.animations';
 

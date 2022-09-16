@@ -1,18 +1,10 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { MatBadgeModule } from '@angular/material/badge';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-import { MatSelectModule } from '@angular/material/select';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { SharedModule } from '@shared/shared.module';
+import { SharedModule } from '../@shared/shared.module';
 
 import { DefaultLayoutComponent } from './components/default-layout/default-layout.component';
 import { MenuListItemComponent } from './components/menu-list-item';
@@ -25,7 +17,7 @@ import {
 } from './components';
 import { ThemeService } from './theme.service';
 import { SubscribeModule } from '@ngneat/subscribe';
-import { ANGULAR_MATERIAL_MODULES } from '@shared/angular-material-modules.const';
+import { ANGULAR_MATERIAL_MODULES } from '../@shared/angular-material-modules.const';
 
 const ANGULAR_MODULES = [CommonModule, RouterModule];
 
