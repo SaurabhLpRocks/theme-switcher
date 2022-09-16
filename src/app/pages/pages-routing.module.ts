@@ -17,7 +17,7 @@ export const pagesRoutes: Routes = [
       },
       {
         loadChildren: () =>
-          import('pages/dashboard').then((me) => me.DashboardModule),
+          import('./dashboard').then((me) => me.DashboardModule),
         path: RoutePath.Dashboard,
       },
     ],
