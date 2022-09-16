@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
 import { PagesRoutingModule } from './pages-routing.module';
+import { ANGULAR_MATERIAL_MODULES } from '@shared/angular-material-modules.const';
 
 @NgModule({
   declarations: [PagesComponent],
-  imports: [CommonModule, PagesRoutingModule],
+  imports: [CommonModule, PagesRoutingModule, ANGULAR_MATERIAL_MODULES],
 })
 export class PagesModule {}

@@ -25,17 +25,7 @@ import {
 } from './components';
 import { ThemeService } from './theme.service';
 import { SubscribeModule } from '@ngneat/subscribe';
-
-const ANGULAR_MATERIAL_MODULES = [
-  MatBadgeModule,
-  MatIconModule,
-  MatListModule,
-  MatSelectModule,
-  MatSidenavModule,
-  MatSlideToggleModule,
-  MatToolbarModule,
-  MatTooltipModule,
-];
+import { ANGULAR_MATERIAL_MODULES } from '@shared/angular-material-modules.const';
 
 const ANGULAR_MODULES = [CommonModule, RouterModule];
 

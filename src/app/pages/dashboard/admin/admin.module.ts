@@ -16,18 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin.component';
 import { AdminRoutingModule } from './admin-routing.module';
 import { SubscribeModule } from '@ngneat/subscribe';
-
-const ANGULAR_MATERIAL_MODULES = [
-  MatAutocompleteModule,
-  MatCardModule,
-  MatDividerModule,
-  MatFormFieldModule,
-  MatInputModule,
-  MatIconModule,
-  MatMenuModule,
-  MatSelectModule,
-  MatTooltipModule,
-];
+import { ANGULAR_MATERIAL_MODULES } from '@shared/angular-material-modules.const';
 
 const ANGULAR_MODULES = [FormsModule, ReactiveFormsModule];
 
