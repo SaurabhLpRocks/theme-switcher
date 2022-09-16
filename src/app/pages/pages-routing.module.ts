@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { RoutePath } from '../@shared/constants/routes.constants';
 
-import { PagesComponent } from 'pages/pages.component';
+import { PagesComponent } from '../pages/pages.component';
 
 export const pagesRoutes: Routes = [
   {
