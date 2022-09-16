@@ -1,8 +1,8 @@
-@use 'sass:map';
-@forward './variables';
+@use "sass:map";
+@forward "./variables";
 
-@use '@angular/material' as mat;
-@use './variables' as variables;
+@use "@angular/material" as mat;
+@use "./variables" as variables;
 
 $light-primary: mat.define-palette(variables.$light-primary-palette);
 $light-accent: mat.define-palette(variables.$light-accent-palette);
@@ -41,9 +41,9 @@ $custom-typography: mat.define-typography-config(
 // Apply the dark theme by default
 @include mat.all-component-themes($dark-theme);
 
-// Include the dark color styles inside of a block with a CSS class. You can make this
+// Include the light color styles inside of a block with a CSS class. You can make this
 // CSS class whatever you want. In this example, any component inside of an element with
-// `.dark-theme` will be affected by this alternate dark theme instead of the default theme.
+// `.light-theme` will be affected by this alternate light theme instead of the default dark theme.
 .light-theme {
   @include mat.all-component-themes($light-theme);
 }
