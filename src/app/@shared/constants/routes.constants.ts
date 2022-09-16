@@ -1,4 +1,3 @@
-import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
 
 export class RouteItem {
@@ -9,7 +8,7 @@ export class NavItem extends RouteItem {
   children?: NavItem[];
   disabled?: boolean;
   public displayName = '';
-  public fontAwesomeIcon: IconDefinition = <IconDefinition>{};
+  public fontAwesomeIcon: any = <any>{};
   materialIcon?: string;
 }
 
